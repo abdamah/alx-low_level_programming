@@ -1,5 +1,5 @@
 # Learning Concepts
-At the end of this project ,i will acertain that i am able to explain to anyone, without the help of google the following;
+At the end of this project the following concepts:
 
 * Why C programming is awesome
 * Who invented C

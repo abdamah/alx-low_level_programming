@@ -1,4 +1,4 @@
-#Welcome
+# Welcome
 This repository was created to cover *C programming* concepts in practical task,to acertain and enhance ground understanding of the programming language while following **Dennis Ritchie** book.
 
 ## Info
