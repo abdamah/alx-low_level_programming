@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * print_sign - Print the sign of a number
- *
- * Return: 1 (is greater that zero) OR 0 (is zero)
- * OR -1 (is less that zero)
+ * print_sign - prints the sign of a number
+ * @n: positive, zero or negative integer
+ * Return: 1 if it's positive, 0 if it's negative and -1 if it's negative
  */
 
 int print_sign(int n)
