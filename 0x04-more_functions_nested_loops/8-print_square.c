@@ -8,18 +8,17 @@
  */
 void print_square(int size)
 {
-	int i;
+	int i = 0, c;
 
 	if (size > 0)
 	{
-		for (i = 0; i < size; i++)
+		while (i < size)
 		{
-			int count = 0;
-
-			while (count < size)
+			c = 0;
+			while (c < size)
 			{
-				_putchar(35); /**ASCII code '#' is '35'*/
-				count++;
+				_putchar(35); /**ASCII code of '#' is '35'*/
+				c++;
 			}
 			_putchar('\n');
 			i++;
