@@ -1,21 +1,18 @@
 #include "main.h"
 /**
- * print_number - prints an integer number using _putchar
- * @n: number to print
- *
- * Return: void
+ * print_number - prints an integer numbers
+ * @n: integer number to be printed
+ * Return:void
  */
 
 void print_number(int n)
 {
 
-	int d = 1, i = 0, j = 0;
+	int d = 1, i = 0, ii = 0;
 
-	if (i == 0)
-		_putchar('0' + n);
 	if (n < 0)
 	{
-		_putchar(45);
+		_putchar('-');
 		n = -n;
 	}
 
@@ -26,11 +23,15 @@ void print_number(int n)
 	}
 	d = d / 10;
 
-	while (j < i)
+	while (ii < i)
 	{
 		_putchar('0' + n / d);
 		n = n - (n / d) * d;
 		d = d / 10;
-		j++;
+		ii++;
 	}
+
+	if (i == 0)
+		_putchar('0' + n);
+
 }
