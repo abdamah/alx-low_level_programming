@@ -11,9 +11,11 @@ void print_number(int n)
 
 	int d = 1, i = 0, j = 0;
 
+	if (i == 0)
+		_putchar('0' + n);
 	if (n < 0)
 	{
-		_putchar('-');
+		_putchar(45);
 		n = -n;
 	}
 
@@ -31,8 +33,4 @@ void print_number(int n)
 		d = d / 10;
 		j++;
 	}
-
-	if (i == 0)
-		_putchar('0' + n);
-_putchar('\n');
 }
