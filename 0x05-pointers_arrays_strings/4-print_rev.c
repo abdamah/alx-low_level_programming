@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rev_string - prints a given string in reverse order
+ * print_rev - prints a given string in reverse order
  * @s: pionter parameter
  *
  * Return: void
