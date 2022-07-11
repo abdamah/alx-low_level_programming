@@ -36,6 +36,6 @@ int _atoi(char *s)
 	}
 	if (sign < 0)
 		result *= sign;
-	
-  return (result);
+
+	return (result);
 }
