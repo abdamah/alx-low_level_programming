@@ -3,7 +3,7 @@
  *_strncat - concatenate two given strings
  *@dest: destination parameter
  *@src: source parameter
- *@n:integer number of bytes 
+ *@n:integer number of bytes
  *Return: char *
  */
 
