@@ -10,6 +10,6 @@ char *str_concat(char *s1, char *s2);
 char *argstostr(int ac, char **av);
 int length(char *str);
 char **strtow(char *str);
-int word_count(char *s);
+int count_words(char *s);
 int **alloc_grid(int width, int height);
 #endif /* MAIN_H */
