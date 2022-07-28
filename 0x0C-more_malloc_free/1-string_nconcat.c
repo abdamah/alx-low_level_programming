@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*string_nstrings - stringsenates two given strings
+*string_nconcat - stringsenates two given strings
 *@s1: The first string.
 *@s2: The second string.
 *@n: The maximum number of bytes of s2 to stringsenate to s1.
