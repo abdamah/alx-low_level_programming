@@ -2,7 +2,7 @@
 
 /**
 * print_dog - prints a struct dog
-*@d: dog parameter
+*@d: dog identification
 *
 */
 
