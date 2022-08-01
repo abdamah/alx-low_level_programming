@@ -1,3 +1,4 @@
+#include "dog.h"
 /**
  * new_dog - creates copy of dog type
  * @name: name of the dog
