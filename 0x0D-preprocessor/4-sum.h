@@ -1,13 +1,6 @@
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    int sum;
+#ifndef SUM_H
+#define SUM_H
 
-    sum = SUM(98, 1024);
-    printf("%d\n", sum);
-    return (0);
-}
+#define SUM(x, y) ((x) + (y))
+
+#endif
