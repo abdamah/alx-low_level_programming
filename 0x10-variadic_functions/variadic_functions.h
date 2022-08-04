@@ -5,13 +5,18 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+*struct printers - a new type of print_all
+*@arguments: passed arguments
+*@print: pointer function
+*/
 typedef struct printers
 {
 	/* pointer to the arguments passed to the function print_all) */
 	char *arguments;
 
 	/* pointer to function print_all that returns nothing */
-	void (*ptrfunc)(va_list);
+	void (*print)(va_list);
 } printers_t;
 
 
