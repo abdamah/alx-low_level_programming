@@ -5,12 +5,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-typedef struct printers{
+typedef struct printers
+{
 	/* pointer to the arguments passed to the function print_all) */
-        char *arguments;
+	char *arguments;
 
 	/* pointer to function print_all that returns nothing */
-        void (*ptrfunc)(va_list);
+	void (*ptrfunc)(va_list);
 } printers_t;
 
 
