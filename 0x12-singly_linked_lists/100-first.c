@@ -4,7 +4,7 @@
  *
  * Return: void
  */
-void __attribute__ ((constructor)) start_up(void)
+start_up(void)
 {
 
 	printf("You're beat! and yet, you must allow,\n");
