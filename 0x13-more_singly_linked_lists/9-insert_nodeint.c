@@ -1,11 +1,10 @@
 #include "lists.h"
-
 /**
  * insert_nodeint_at_index - inserts a new node at a given index
- * @head: double pointer to the head of the linkedList.
- * @idx: is the index of the list where the new node should be inserted
- * @n: content of the list.
- * Return:A address of the new node or null if fails.
+ * @head: double pointer to the head of the linkedList
+ * @idx: is the index of the list where the new node should be added
+ * @n: is the data
+ * Return: A address of the new node or NULL if fails.
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -26,15 +25,16 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = new_node;
 		return (new_node);
 	}
+
 	current = *head;
 
-	while (is_valid(current, idx))
+	while (current != NULL && count != idx - 1)
 	{
 		count++;
 		current = current->next;
 	}
 
-	if (is_valid(current, idx))
+	if (count == idx - 1 && current != NULL)
 	{
 		new_node->next = current->next;
 		current->next = new_node;
@@ -42,18 +42,4 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	free(new_node);
 	return (NULL);
-}
-
-/**
- * is_valid - checks validity of current node.
- * @current: pointer to the current of the linkedList.
- * @index: index of the current node.
- * Return: 1 if valid or 0 if fails.
- */
-
-int is_valid(listint_t *current, int index)
-{
-	int count = 0;
-
-	return (count == index - 1 && current != NULL);
 }
