@@ -1,5 +1,5 @@
-#ifndef BITMANIPULATION
-#define BITMANIPULATION
+#ifndef BITMANIPULATION_H
+#define BITMANIPULATION_H
 
 #include <unistd.h>
 #include <stdio.h>
